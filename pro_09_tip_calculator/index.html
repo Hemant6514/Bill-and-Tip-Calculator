@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap" rel="stylesheet">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <main>
+        <section class="input-field">
+         <p class="input-para">
+           <span>Bill Amount</span>
+           <input type="number" placeholder="Enter Bill" id="bill-input">
+         </p>
+
+         <p class="input-para">
+            <span>Tip Percantage</span>
+              <div class="tip-buttons">
+                <button class="tip-btn" value="5">5%</button>
+                <button class="tip-btn" value="10">10%</button>
+                <button class="tip-btn" value="15">15%</button>
+                <button class="tip-btn" value="20">20%</button>
+                <button class="tip-btn" value="25">25%</button>
+              </div>
+         </p>
+
+         <p class="input-para">
+             <span>Custom Tip %</span>
+             <input type="number" placeholder="Enter Custom Tip %" id="custom-input">
+         </p>
+
+         <p class="input-para">
+            <span>Total Person</span>
+            <input type="number" placeholder="Enter Person No." id="people-input">
+         </p>
+
+         <button type="submit" id="calculate" class="calculate-btn">Calculate</button>
+        </section>
+
+        <section class="calculate-field">
+
+          <div class="calculate-result">
+           <p>Total Bill</p>
+           <span class="result-show" id="total-bill"></span>
+          </div>
+
+          <div class="calculate-result">
+            <p>Tip Per Person</p>
+            <span class="result-show" id="tip-person"></span>
+          </div>
+
+          <div class="calculate-result">
+            <p>Bill Per Person</p>
+            <span class="result-show" id="bill-person"></span>
+          </div>
+
+            <div class="greetings">
+              <p>✨ Thanks for dining with us!
+                Your generosity keeps the good vibes flowing.
+                We can’t wait to serve you again 💜</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
