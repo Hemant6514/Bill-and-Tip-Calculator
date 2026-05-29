@@ -13,6 +13,9 @@ let selectedTip = 0;
 
 button.forEach((btn) => {
     btn.addEventListener('click', () => {
+         button.forEach((b) => {
+            b.classList.remove("active")
+        })
         selectedTip = Number(btn.value)
         btn.classList.add("active")
     })
